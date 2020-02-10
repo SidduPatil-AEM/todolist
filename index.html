@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Tolist App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src='main.js'></script>
+</head>
+<body class="panel-body">
+    <h3>Welcome to Todolist App</h3>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>Welcome todolist app</h3>
+                <form>
+                    <div class="form-group">
+                        <div class="row">
+                            <label>Todo list</label>
+                            <input type="text" class="form-control" id="todoitem"/>
+                            <button id="btn-submit" type="submit" class="btn btn-primary">Add</button>
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-8">
+                <h3>Todolist Added</h3>
+                <div class="alert alert-success">
+                    <p id="alertMessage"></p>
+                </div>
+                <div class="float-right">
+                    <button type="button" id="removeTodos" class="btn btn-secondary btn-lg">Remove ALL Todos</button>
+                </div>
+                <ul id="todo-items" class="list-group">
+                    
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script src='main.js'></script>
+</body>
+</html>
